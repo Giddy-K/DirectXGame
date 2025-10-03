@@ -50,7 +50,7 @@ bool Window::init()
     if (!window)
         window = this;
 
-    m_hwnd = ::CreateWindowEx(0, L"MyWindowClass", L"DirectX Application", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1024, 786,
+    m_hwnd = ::CreateWindowEx(0, L"MyWindowClass", L"C++ 3D Game Engine", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1536, 864,
         NULL, NULL, GetModuleHandle(NULL), NULL);
 
     if (!m_hwnd)

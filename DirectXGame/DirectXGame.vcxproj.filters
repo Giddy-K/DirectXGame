@@ -1,42 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="App">
-      <UniqueIdentifier>{7bcbb15e-05dd-456e-b2b0-d04ffd7458bf}</UniqueIdentifier>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="GameEngine">
-      <UniqueIdentifier>{c535e55e-ac36-43d5-9415-32ac570f6957}</UniqueIdentifier>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="GameEngine\WindowingSystem">
-      <UniqueIdentifier>{d23db94a-1cfc-4930-a127-16842837ee2a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GameEngine\GraphicsEngine">
-      <UniqueIdentifier>{3a46bfb4-4dba-4d10-ad4c-b779b3680954}</UniqueIdentifier>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>App</Filter>
+    <ClCompile Include="Game\main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AppWindow.cpp">
-      <Filter>App</Filter>
+    <ClCompile Include="DX3D\Source\DX3D\Core\Base.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>GameEngine\WindowingSystem</Filter>
+    <ClCompile Include="DX3D\Source\DX3D\Window\Win32\Win32Window.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GraphicsEngine.cpp">
-      <Filter>GameEngine\GraphicsEngine</Filter>
+    <ClCompile Include="DX3D\Source\DX3D\Game\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DX3D\Source\DX3D\Game\Win32\Win32Game.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AppWindow.h">
-      <Filter>App</Filter>
+    <ClInclude Include="DX3D\Include\DX3D\Core\Base.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>GameEngine\WindowingSystem</Filter>
+    <ClInclude Include="DX3D\Include\DX3D\Window\Window.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GraphicsEngine.h">
-      <Filter>GameEngine\GraphicsEngine</Filter>
+    <ClInclude Include="DX3D\Include\DX3D\Game\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Core\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\All.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

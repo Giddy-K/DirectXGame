@@ -37,8 +37,10 @@ Write-Host "Setting up DirectX Engine environment..."
 (Get-Content .\YourGameEngine.vcxproj) -replace 'OutDir>.*?</OutDir>', 'OutDir>Bin\$(Platform)\$(Configuration)\</OutDir>' | Set-Content .\YourGameEngine.vcxproj
 
 Write-Host "Setup complete. Ready to build!"
+```
 
 Then run it from PowerShell:
+
 ```powershell
 .\setup.ps1
 ```

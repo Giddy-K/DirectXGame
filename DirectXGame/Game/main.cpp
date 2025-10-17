@@ -5,7 +5,7 @@ int main()
 {
 	try
 	{
-		dx3d::Game game{};
+		dx3d::Game game({ dx3d::Logger::LogLevel::Info }); // Set log level to Info for more detailed logging
 		game.run();
 	}
 	catch (const std::runtime_error&)

@@ -4,7 +4,7 @@ Follow these steps to set up and build the engine locally.
 
 ---
 
-## 🧩 Manual Setup (Recommended for first-time build)
+## Manual Setup (Recommended for first-time build)
 
 1. Open the solution file (`.sln`) in **Visual Studio**.  
 2. In the toolbar, change the build configuration to **x64**.  

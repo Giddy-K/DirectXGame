@@ -1,6 +1,6 @@
 #include <DX3D/Graphics/RenderSystem.h>
 
-dx3d::RenderSystem::RenderSystem()
+dx3d::RenderSystem::RenderSystem(const RenderSystemDesc& desc) : Base(desc.base)
 {
 	D3D_FEATURE_LEVEL featureLevel{};
 
@@ -24,8 +24,13 @@ dx3d::RenderSystem::RenderSystem()
 	);
 
 	if (FAILED(hr))
+	{
+		getLogger().log(Logger::LogLevel::Error, "Failed to create D3D11 device.");
 		throw std::runtime_error("Failed to create D3D11 device.");
+	}
+		
 }
+
 
 dx3d::RenderSystem::~RenderSystem()
 {

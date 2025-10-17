@@ -4,7 +4,7 @@ Follow these steps to set up and build the engine locally.
 
 ---
 
-## Manual Setup (Recommended for first-time build)
+## 🧩 Manual Setup (Recommended for first-time build)
 
 1. Open the solution file (`.sln`) in **Visual Studio**.  
 2. In the toolbar, change the build configuration to **x64**.  
@@ -16,14 +16,25 @@ Follow these steps to set up and build the engine locally.
      - **C++ Language Standard** → `ISO C++20 Standard (/std:c++20)`
    - Under **C/C++ → General**, enable:
      - **Multi-processor Compilation** → `Yes (/MP)`
+   - Under **VC++ Directories**, set:
+     - **Include Directories** → Add  
+       ```
+       DX3D/Include  
+       DX3D/Source
+       ```
+   - Under **Linker → Input**, in **Additional Dependencies**, add:
+       ```
+       d3d11.lib
+       ```
 
-Then build and run the project.
+4. Apply and save the changes.  
+5. Build and run the project.
 
 ---
 
 ## Automated Setup (Optional)
 
-You can automate the setup by running this PowerShell script.
+You can automate part of the setup by running this PowerShell script.
 
 Save the following as **`setup.ps1`** in the project root:
 

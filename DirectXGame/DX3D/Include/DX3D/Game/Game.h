@@ -13,6 +13,8 @@ namespace dx3d
 		virtual void run() final;
 
 	private:
+		//Last to be created, first to be destroyed
+		std::unique_ptr<GraphicsEngine> m_graphicsEngine{};
 		std::unique_ptr<Window> m_display{};
 		bool m_isRunning{ true };
 	};
